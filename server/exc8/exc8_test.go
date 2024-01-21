@@ -10,6 +10,6 @@ func Test_Exc8(t *testing.T) {
 	want := []string{"bag", "hello", "without", "world"}
 	got := Exc8(input)
 	if !reflect.DeepEqual(got, want) {
-		t.Errorf("Exc7() = %v, want %v", got, want)
+		t.Errorf("Exc8() = %v, want %v", got, want)
 	}
 }

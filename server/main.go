@@ -1,11 +1,12 @@
 package main
 
 import (
-	"practice/server/exc8"
+	"practice/server/exc10"
 )
 
 func main() {
-	input := exc8.Getinput()
-	exc8.Exc8(input)
+	//input := exc9.Getinput()
+	x, y := exc10.Getinput()
+	exc10.Exc10(x, y)
 
 }
