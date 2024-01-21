@@ -5,7 +5,7 @@ but are not a multiple of 5, between 2000 and 3200 (both included).
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 */
 
-package prog
+package exc1
 
 import (
 	"fmt"
@@ -13,7 +13,17 @@ import (
 	"strings"
 )
 
+func Getinput() (low int, high int) {
+	fmt.Print("Enter the low value:")
+	fmt.Scan(&low)
+
+	fmt.Print("Enter the low value:")
+	fmt.Scan(&high)
+	return low, high
+}
+
 func Exc1(low, high int) string {
+
 	var result []string
 	for i := low; i <= high; i++ {
 		if i%7 == 0 && i%5 != 0 {

@@ -7,7 +7,7 @@ Create a separate file (module) which has at least two methods:
 Also create a `main.go` file that acts as calling class.
 */
 
-package prog
+package exc5
 
 import (
 	"bufio"
@@ -19,9 +19,14 @@ import (
 func Exc5_ReadString() string {
 	fmt.Print("Enter the string:")
 	scanner := bufio.NewScanner(os.Stdin)
+	var input string
 	if scanner.Scan() {
-		return scanner.Text()
+		input = scanner.Text()
+		fmt.Println("Original String:", input)
+		fmt.Println("String in Uppercase:", PrintString(input))
+		return input
 	}
+
 	return ""
 }
 

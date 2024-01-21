@@ -6,9 +6,15 @@ Suppose the following input is supplied to the program: 8
 Then, the output should be: 40320
 */
 
-package prog
+package exc2
 
 import "fmt"
+
+func Getinput() (n int) {
+	fmt.Print("Enter the low value:")
+	fmt.Scan(&n)
+	return n
+}
 
 func Exc2(n int) int {
 

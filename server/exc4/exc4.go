@@ -1,6 +1,6 @@
 //takes a string of comma-separated numbers and returns a slice of int
 
-package prog
+package exc4
 
 import (
 	"fmt"
@@ -8,19 +8,21 @@ import (
 	"strings"
 )
 
+func Getinput() (input string) {
+	fmt.Print("Enter the low value:")
+	fmt.Scan(&input)
+	return input
+}
 func Exc4(input string) []int {
-	//input := "12,13,14,15"
-
 	numbers := strings.Split(input, ",")
 	fmt.Println(len(numbers))
-	//fmt.Println(numbers)
-
 	num := make([]int, len(numbers))
 
 	for i, value := range numbers {
 		s := strings.Trim(value, " ")
 		num[i], _ = strconv.Atoi(s)
 	}
+
 	fmt.Println(num)
 	return num
 }

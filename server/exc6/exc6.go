@@ -19,13 +19,27 @@ use math.Sqrt for the square root
 
 use math.Round for rounding a float operation*/
 
-package prog
+package exc6
 
 import (
 	"fmt"
 	"math"
 )
 
+func Getinput() (D []int) {
+	fmt.Println("Enter the count:")
+	var count int
+	fmt.Scan(&count)
+	D = make([]int, count)
+	for i := 0; i < count; i++ {
+		fmt.Printf("Enter the elements %d: ", i+1)
+		var value int
+		fmt.Scan(&value)
+		D[i] = value
+	}
+	fmt.Println(len(D))
+	return D
+}
 func Exc6(D []int) []int {
 
 	C := 50

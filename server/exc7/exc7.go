@@ -13,9 +13,18 @@ Then, the output of the program should be:
 Note: In case of input data being supplied to the question,
 it should be assumed to be a console input in a comma-separated form.*/
 
-package prog
+package exc7
 
 import "fmt"
+
+func Getinput() (x, y int) {
+	fmt.Print("Enter the number of elements in x:")
+	fmt.Scan(&x)
+
+	fmt.Print("Enter the number of elements in y:")
+	fmt.Scan(&y)
+	return x, y
+}
 
 func Exc7(x int, y int) [][]int {
 	data := [][]int{}

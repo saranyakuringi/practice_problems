@@ -1,7 +1,6 @@
-package main
+package exc4
 
 import (
-	"practice/server/prog"
 	"reflect"
 	"testing"
 )
@@ -9,7 +8,7 @@ import (
 func TestExc_04(t *testing.T) {
 	input := "12, 23, 34, 45, 56, 67, 78, 89, 90"
 	want := []int{12, 23, 34, 45, 56, 67, 78, 89, 90}
-	got := prog.Exc4(input)
+	got := Exc4(input)
 	if !reflect.DeepEqual(got, want) {
 		t.Errorf("Exc4() = %v, want %v", got, want)
 	}
