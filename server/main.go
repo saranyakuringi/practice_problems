@@ -1,12 +1,10 @@
 package main
 
-import (
-	"practice/server/exc10"
-)
+import "practice/server/exc11"
 
 func main() {
-	//input := exc9.Getinput()
-	x, y := exc10.Getinput()
-	exc10.Exc10(x, y)
-
+	points := [][]int{{1, 2}, {3, -1}, {2, 1}, {2, 3}}
+	vertex := []int{2, 3}
+	var k float64 = 2
+	exc11.ClosestDistance(points, vertex, k)
 }

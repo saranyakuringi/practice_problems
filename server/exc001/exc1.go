@@ -5,7 +5,7 @@ but are not a multiple of 5, between 2000 and 3200 (both included).
 The numbers obtained should be printed in a comma-separated sequence on a single line.
 */
 
-package exc1
+package exc001
 
 import (
 	"fmt"

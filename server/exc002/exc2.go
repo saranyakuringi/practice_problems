@@ -6,7 +6,7 @@ Suppose the following input is supplied to the program: 8
 Then, the output should be: 40320
 */
 
-package exc2
+package exc002
 
 import "fmt"
 

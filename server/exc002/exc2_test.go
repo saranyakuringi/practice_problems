@@ -1,4 +1,4 @@
-package exc2
+package exc002
 
 import (
 	"testing"
